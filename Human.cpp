@@ -103,5 +103,14 @@ class Student : public Human_with_city_of_birth, virtual public University, Spec
 };
 
 int main() {
+    setlocale(LC_ALL,"Russia");
+    Student I;
+    I.Presentation();
+    cout<<"А через год я скажу: "<<endl;
+    I.Set_age(20);
+    I.Set_course(3);
+    I.Presentation();
+    Student My_friend("Калашников", "Виктор", 19, true, "Александровск-Сахалинский","ДВФУ","38.03.01вшэ Экономика",2);
+    My_friend.Presentation();
     return 0;
 }
